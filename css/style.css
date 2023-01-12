@@ -101,7 +101,10 @@ a {
     color: var(--link-nav-color);
     padding: 0 20px;
     line-height: 50px;
+}
 
+.nav__list-link:hover{
+    color: var(--orange-color);
 }
 
 .wrapper {
