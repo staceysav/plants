@@ -103,11 +103,17 @@ a {
     line-height: 50px;
 }
 
-.nav__list-link:hover{
+.nav__list-link:hover {
     color: var(--orange-color);
 }
 
-.wrapper {
+.welcome {
+    height: 532px;
+    background-color: var(--bg-section-color);
+    display: flex;
+}
+
+.welcome-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -115,12 +121,6 @@ a {
     /* padding: 187px 218px; */
     width: 1222px;
     height: 479px;
-}
-
-.welcome {
-    height: 532px;
-    background-color: var(--bg-section-color);
-    display: flex;
 }
 
 .welcome-section__image {
@@ -159,12 +159,22 @@ a {
 .button:hover {
     background-color: var(--orange-color);
     color: white;
-    transition: 0.6s linear; 
+    transition: 0.6s linear;
 }
 
 .about {
     height: 666px;
     display: flex;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    /* padding: 187px 218px; */
+    width: 1222px;
+    height: 479px;
 }
 
 .about-section__content {
@@ -434,4 +444,168 @@ a {
 
 .social-item {
     list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 50px;
+        margin: 0 auto 30px;
+    }
+
+    .nav {
+        width: 100%;
+        height: 117px;
+        padding: 35px 50px;
+    }
+
+    #welcome {
+        height: 420px;
+
+    }
+
+    .welcome-wrapper {
+        height: 310px;
+        width: 668px;
+        margin: 40px 50px 70px 50px;
+        flex-direction: row-reverse;
+    }
+
+    .welcome-text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        margin: 0 auto 30px;
+    }
+
+    .welcome-section__image {
+        width: 280px;
+        height: 254.15px;
+        left: 438px;
+        top: 40px;
+
+    }
+
+    #about {
+        width: 768px;
+        height: 783px;
+    }
+
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 768px;
+        height: 783px;
+    }
+
+    .about-section__content {}
+
+    .first-header {
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 46px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .about-text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .about-section__image {
+        width: 250px;
+        height: 258px;
+        /* left: 259px;
+        top: 430px; */
+    }
+
+    #service {
+        width: 768px;
+        height: 1780px;
+        left: 0px;
+        top: 1320px;
+    }
+
+    .service-header {
+        text-align: start;
+    }
+
+    .service-wrapper {
+        margin: 60px auto 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .service-section__header {
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        width: 560px;
+        /* justify-content: ; */
+        align-items: flex-start;
+        margin-bottom: 90px;
+        margin-top: 32px;
+    }
+
+    .service-section__header__buttons {}
+
+    .service-section__images {
+        /* width: 668px;
+        height: 1426px; */
+        justify-content: space-between;
+        margin-top: 130px;
+    }
+
+    .service-section__images__card {
+        width: 281px;
+        height: 450px;
+        border-radius: 20px;
+        border: 1px solid #E3E1D5;
+        margin-right: 5px;
+        /* margin-bottom: 38px; */
+        text-align: center;
+    }
+
+    .service-section__images__card h4 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: var(--orange-color);
+        margin: 10px auto;
+    }
+
+    .service-section__images__card p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--grayish-color);
+    }
+
+    .service-section__images__card img {
+        width: 280px;
+        height: 350px;
+    }
+
+    
 }
