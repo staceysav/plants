@@ -285,6 +285,14 @@ a {
     height: 560px;
 }
 
+.prices-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 1222px;
+}
+
 .prices-section__left-container {
     margin-top: 38px;
     display: flex;
@@ -367,6 +375,14 @@ a {
 #contacts {
     height: 550px;
     background-color: var(--bg-section-color);
+}
+
+.contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 1222px;
 }
 
 .contacts-header {
@@ -607,5 +623,95 @@ a {
         height: 350px;
     }
 
+    #prices {
+        height: 585px;
+    }
+
+    .prices-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        width: 668px;
+    }
+
+    .prices-section__left-container {
+        margin-top: 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .prices-header {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: right;
+        margin: 0;
+        text-align: start;
+    }
+
+    .prices-section__right-container {
+        margin-top: 139px;
+    }
+
+    .prices-tariffs__button {
+        width: 250px;
+        height: 50px;
+        background: var(--bg-section-color);
+        border-radius: 20px;
+        border: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #contacts {
+        height: 768px;
+    }
+    
+    .contacts-wrapper {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts-woman {
+        height: 248px;
+        width: 200px;
+        position: absolute;
+        top: 4265px;
+    }
+
+    #footer {
+        height: 181px;
+    }
+    
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+    }
+    
+    .social-list {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        width: 210px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+   
+    .social-item {
+        list-style-type: none;
+    }
     
 }
