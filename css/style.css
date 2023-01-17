@@ -851,10 +851,9 @@ a {
         width: 40px;
         height: 24px;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 35px;
+        right: 22px;
         z-index: 11;
-        
     }
 
     .nav__close_inactive {
