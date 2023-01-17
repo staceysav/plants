@@ -1087,6 +1087,10 @@ a {
         margin-top: 14px;
     }
 
+    .prices-leafs {
+        display: none;
+    }
+
     #contacts {
         height: 768px;
     }
