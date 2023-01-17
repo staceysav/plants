@@ -1010,19 +1010,20 @@ a {
     }
 
     #prices {
-        height: 585px;
+        height: 512px;
     }
 
     .prices-wrapper {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         margin: auto;
-        width: 668px;
+        width: 100%;
     }
 
     .prices-section__left-container {
-        margin-top: 38px;
+        margin-top: 25px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -1032,19 +1033,41 @@ a {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 35px;
-        text-align: right;
-        margin: 0;
-        text-align: start;
+        text-align: center;
+        margin: 0 auto 40px;
+    }
+
+    .prices-tariffs {
+        width: 235px;
+        height: 224px;
+        /* border: 1px solid #E3E1D5;
+        border-radius: 20px; */
+        /* padding: 34px 41px; */
+        /* display: flex;
+        flex-wrap: wrap; */
+        /* justify-content: space-between; */
+        
+
     }
 
     .prices-section__right-container {
-        margin-top: 139px;
+        margin-top: 19px;
+        align-items: center;
+    }
+
+    .prices-info {
+        align-items: center;
+    }
+
+    .prices-info h4 {
+        text-align: center;
+        margin-bottom: 14px;
     }
 
     .prices-tariffs__button {
-        width: 250px;
+        width: 180px;
         height: 50px;
         background: var(--bg-section-color);
         border-radius: 20px;
@@ -1054,6 +1077,14 @@ a {
         font-weight: 700;
         font-size: 20px;
         line-height: 20px;
+        margin-bottom: 13px;
+    }
+
+    .prices-button {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        margin-top: 14px;
     }
 
     #contacts {
