@@ -1005,12 +1005,12 @@ a {
         display: flex;
         flex-direction: column;
         height: 50px;
-        width: 560px;
+        width: 360px;
         /* justify-content: ; */
         align-items: flex-start;
         /* margin-bottom: 90px; */
         margin-top: 30px;
-        margin-left: 25px;
+        margin-left: 20px;
     }
 
     .service-section__header__buttons {
