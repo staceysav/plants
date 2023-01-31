@@ -16,6 +16,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    
 }
 
 body {
@@ -872,7 +874,7 @@ a {
         background-color: white;
         top: 50%;
         width: 100%;
-        
+
     }
 
     .nav__close-item:first-child {
@@ -1046,6 +1048,7 @@ a {
         margin-bottom: 34px;
         text-align: center;
     }
+
     /* leave this class as it is (as for card dimentions) */
 
     .service-section__images__card h4 {
@@ -1111,7 +1114,7 @@ a {
         /* display: flex;
         flex-wrap: wrap; */
         /* justify-content: space-between; */
-        
+
 
     }
 
@@ -1205,7 +1208,7 @@ a {
         line-height: 24px;
         margin: 5px auto;
     }
-    
+
 
     .social-list {
         display: flex;
@@ -1222,4 +1225,10 @@ a {
         list-style-type: none;
     }
 
+}
+
+/* Blurring images */
+.blur {
+    filter: blur(3px);
+    transition: filter 1s linear;
 }
