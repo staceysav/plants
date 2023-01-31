@@ -25,36 +25,74 @@
 
 // Blurring services
 
-var imgId = document.getElementById('111');
-var btnGarden = document.querySelector('.gardens-button');
-var btnLawn = document.querySelector('.lawn-button');
-var btnPlanting = document.querySelector('.planting-button');
-var clickGardenBlur = document.querySelectorAll('.planting-services, .lawn-services');
-var clickLawnBlur = document.querySelectorAll('.planting-services, .garden-services');
-var clickPlantingBlur = document.querySelectorAll('.lawn-services, .garden-services');
+// var btnGarden = document.querySelector('.garden-button');
+// var btnLawn = document.querySelector('.lawn-button');
+// var btnPlanting = document.querySelector('.planting-button');
+// var clickGardenBlur = document.querySelectorAll('.planting-services, .lawn-services');
+// var clickLawnBlur = document.querySelectorAll('.planting-services, .garden-services');
+// var clickPlantingBlur = document.querySelectorAll('.lawn-services, .garden-services');
 
-btnGarden.addEventListener('click', addBlurGarden);
-btnLawn.addEventListener('click', addBlurLawn);
-btnPlanting.addEventListener('click', addBlurPlanting);
+// btnGarden.addEventListener('click', addBlurGarden);
+// btnLawn.addEventListener('click', addBlurLawn);
+// btnPlanting.addEventListener('click', addBlurPlanting);
 
 
-function addBlurGarden() {
-    clickGardenBlur.forEach((userItem) => {
-        userItem.classList.toggle('blur');
-      })
+// function addBlurGarden() {
+//     clickGardenBlur.forEach((userItem) => {
+//         userItem.classList.toggle('blur');
+//       })
+// }
+
+// function addBlurLawn() {
+//     clickLawnBlur.forEach((userItem) => {
+//         userItem.classList.toggle('blur');
+//       })
+// }
+
+// function addBlurPlanting() {
+//     clickPlantingBlur.forEach((userItem) => {
+//         userItem.classList.toggle('blur');
+//       })
+// }
+
+// var serviceButtons = document.querySelectorAll('.service-button');
+// serviceButtons.addEventListener('click', makeActiveButtons);
+
+
+// function makeActiveButtons() {
+//     serviceButtons.forEach((userItem) => {
+//         userItem.classList.toggle('active-service-button');
+//       })
+// }
+
+function applyBlur() {
+    for (selector of ["planting", 'garden', 'lawn']) {
+        let button = document.querySelector(`.${selector}-button`);
+        for (element of document.querySelectorAll(`.${selector}-services`)) {
+            if (element.classList.contains("blur") ^ !button.classList.contains('active-service-button')) {
+                element.classList.toggle('blur');
+            }
+        }
+    }
+}
+applyBlur()
+
+var serviceButtons = document.querySelectorAll('.service-button');
+
+for (button of serviceButtons) {
+    button.addEventListener('click', toggleActive)
 }
 
-function addBlurLawn() {
-    clickLawnBlur.forEach((userItem) => {
-        userItem.classList.toggle('blur');
-      })
+function toggleActive(event) {
+    let count = 0;
+    for (i of document.querySelectorAll('.service-button')) {
+        if (i.classList.contains('active-service-button') ){
+            count += 1;
+        }
+    }
+    if (count >= 2 && !event.srcElement.classList.contains('active-service-button')) {
+        return
+    }
+    event.srcElement.classList.toggle('active-service-button');
+    applyBlur();
 }
-
-function addBlurPlanting() {
-    clickPlantingBlur.forEach((userItem) => {
-        userItem.classList.toggle('blur');
-      })
-}
-
-
-

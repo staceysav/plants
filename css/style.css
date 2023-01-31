@@ -17,7 +17,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    
+
 }
 
 body {
@@ -189,12 +189,6 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-}
-
-.button:hover {
-    background-color: var(--orange-color);
-    color: white;
-    transition: 0.6s linear;
 }
 
 .about {
@@ -1231,4 +1225,18 @@ a {
 .blur {
     filter: blur(3px);
     transition: filter 1s linear;
+}
+
+/* Making service buttons active */
+
+/* .button:hover {
+    background-color: var(--orange-color);
+    color: white;
+    transition: 0.6s linear;
+} */
+
+.active-service-button {
+    background-color: var(--orange-color);
+    color: white;
+    transition: 0.6s linear;
 }
