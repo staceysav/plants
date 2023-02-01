@@ -1248,12 +1248,18 @@ a {
     background-color: #D6E7D2;
 }
 
+.active-tariff {
+    border-radius: 20px 20px 0 0;
+}
+
 /* prices-panel Style the accordion panel. Note: hidden by default */
 .prices-panel {
-    /* padding: 0 18px; */
+    padding: 0 40px 15px;
     background-color: #D6E7D2;
     display: none;
     overflow: hidden;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
 }
 
 .order-button {
@@ -1283,4 +1289,16 @@ a {
     font-size: 10px;
     line-height: 10px;
     color: #717171;
+}
+
+.tariff-line {
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: var(--grayish-color);
+    /* position: absolute; */
+    left: 0;
+    color: var(--grayish-color);
+    position: relative;
+    margin: auto;
 }
