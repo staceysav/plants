@@ -348,6 +348,11 @@ a {
     flex-wrap: wrap;
 }
 
+.prices-tariffs__button img {
+    position: relative;
+    left: 20%;
+}
+
 
 .prices-section__right-container {
     margin-top: 38px;
@@ -1301,4 +1306,12 @@ a {
     color: var(--grayish-color);
     position: relative;
     margin: auto;
+}
+
+.acc-active {
+    transform: rotate(180deg);
+}
+
+.order-button a {
+    text-decoration: none;
 }
